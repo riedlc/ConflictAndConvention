@@ -16,27 +16,27 @@ Parameters of this model are the following:
 
 payoffs, pop_list_in, init_strategy_str_list_in, net_discount_list_in, strat_discount_list_in, net_speed_list_in, strat_speed_list_in,net_tremble_list_in, strat_tremble_list_in, init_cond_hawk_p1_list_in, init_cond_hawk_p2_list_in
 
-Population [pop, integer > 1]: Number of agents (default 20)
+- Population [pop, integer > 1]: Number of agents (default 20)
 
-Payoffs [p1_payoffs,p2_payoffs, array w/ values in [0,1]: Interaction payoffs given by visitor and host strategy played in a single game. See table in Figure 1 of paper for constraints.  
+- Payoffs [p1_payoffs,p2_payoffs, array w/ values in [0,1]: Interaction payoffs given by visitor and host strategy played in a single game. See table in Figure 1 of paper for constraints.  
 
-Initial Strategy [init_strategy_str, string]: initial strategy configuration, either “random” or “uniform” (default “uniform”)
+- Initial Strategy [init_strategy_str, string]: initial strategy configuration, either “random” or “uniform” (default “uniform”)
 
-Network Discount [net_discount, float in [0,1]]: memory factor in link updating.  All current outgoing network weights are multiplied by net_discount just before network learning occurs. As it is a multiplication factor, 1 implies no discounting, 0 implies maximum discounting.  Default value 0.99.
+- Network Discount [net_discount, float in [0,1]]: memory factor in link updating.  All current outgoing network weights are multiplied by net_discount just before network learning occurs. As it is a multiplication factor, 1 implies no discounting, 0 implies maximum discounting.  Default value 0.99.
 
-Strategy Discount [strat_discount, float in [0,1]]: memory factor in strategy updating. Both (hawk, dove) strategy weights are multiplied by strat_discount just before strategy learning occurs.  As it is a multiplication factor, 1 implies no discounting, 0 implies maximum discounting.  Default value 0.99.
+- Strategy Discount [strat_discount, float in [0,1]]: memory factor in strategy updating. Both (hawk, dove) strategy weights are multiplied by strat_discount just before strategy learning occurs.  As it is a multiplication factor, 1 implies no discounting, 0 implies maximum discounting.  Default value 0.99.
 
-Network Learning Speed [net_learning_speed, float >= 0]: multiplier for network payoff additions (larger value corresponds to faster network learning).  0 implies no learning.
+- Network Learning Speed [net_learning_speed, float >= 0]: multiplier for network payoff additions (larger value corresponds to faster network learning).  0 implies no learning.
 
-Strategy Learning Speed [strat_learning_speed, float >= 0]: multiplier for strategy payoff additions (larger value corresponds to faster strategy learning)
+- Strategy Learning Speed [strat_learning_speed, float >= 0]: multiplier for strategy payoff additions (larger value corresponds to faster strategy learning)
 
-Network Tremble [net_tremble, float in [0,1]]: network error rate between 0 and 1 (default 0.01).  When agents make a network error, they choose a random agent in the network to play against regardless of adjacency weights.  0 implies no errors, 1 means that agents make a random partner choice every round.
+- Network Tremble [net_tremble, float in [0,1]]: network error rate between 0 and 1 (default 0.01).  When agents make a network error, they choose a random agent in the network to play against regardless of adjacency weights.  0 implies no errors, 1 means that agents make a random partner choice every round.
 
-Strategy Tremble [strat_tremble, float in [0,1]]: strategy error rate between 0 and 1 (default 0.01).  When agents make a strategy error they flip a coin to decide which strategy to play, rather than relying on strategy weights.
+- Strategy Tremble [strat_tremble, float in [0,1]]: strategy error rate between 0 and 1 (default 0.01).  When agents make a strategy error they flip a coin to decide which strategy to play, rather than relying on strategy weights.
 
-Initial Visitor Hawk Condition [init_cond_hawk_p1, float in [0,100]]: initial visitor hawk strategy percentage.  (i.e., if 75, all agents will start simulation with 75% chance to play hawk when visiting).
+- Initial Visitor Hawk Condition [init_cond_hawk_p1, float in [0,100]]: initial visitor hawk strategy percentage.  (i.e., if 75, all agents will start simulation with 75% chance to play hawk when visiting).
 
-Initial Host Hawk Condition [init_cond_hawk_p2, float in [0,100]]: initial host hawk strategy percentage.  (i.e., if 75, all agents will start simulation with 75% chance to play hawk when hosting).
+- Initial Host Hawk Condition [init_cond_hawk_p2, float in [0,100]]: initial host hawk strategy percentage.  (i.e., if 75, all agents will start simulation with 75% chance to play hawk when hosting).
 
 ###########################################
 ###########################################
