@@ -4,10 +4,7 @@ Royal Society Interface (citation to come)
 
 This README describes how to run code used in above paper.  The code simulates a hawk-## dove game with reinforcement learning on both strategies and adjacency links.  Agents ## thus learn what strategy to play and who to play against.  Agents interact in two     ## contexts: as visitor and as host.  The strategies associated with these contexts are  ## indepedent within a single agent.
 
-#### This project includes this README, three python files that are used to set up simulation, inputs, a C++ simulation file, and “ESD_Seeds_All_Ordered.csv” which C++ reads a list of seeds from.
-
-###########################################
-###########################################
+This project includes this README, three python files that are used to set up simulation, inputs, a C++ simulation file, and “ESD_Seeds_All_Ordered.csv” which C++ reads a list of seeds from.
 
 ####Parameters of this model are the following:
 
