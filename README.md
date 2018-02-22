@@ -4,9 +4,11 @@ Royal Society Interface (citation to come)
 
 This README describes how to run code used in above paper.  The code simulates a hawk-## dove game with reinforcement learning on both strategies and adjacency links.  Agents ## thus learn what strategy to play and who to play against.  Agents interact in two     ## contexts: as visitor and as host.  The strategies associated with these contexts are  ## indepedent within a single agent.
 
-This project includes this README, three python files that are used to set up simulation, inputs, a C++ simulation file, and “ESD_Seeds_All_Ordered.csv” which C++ reads a list of seeds from.
+#### This project includes this README, three python files that are used to set up simulation, inputs, a C++ simulation file, and “ESD_Seeds_All_Ordered.csv” which C++ reads a list of seeds from.
 
-####Parameters of this model are the following:
+###########################################
+
+#### Parameters of this model are the following:
 
 payoffs, pop_list_in, init_strategy_str_list_in, net_discount_list_in, strat_discount_list_in, net_speed_list_in, strat_speed_list_in,net_tremble_list_in, strat_tremble_list_in, init_cond_hawk_p1_list_in, init_cond_hawk_p2_list_in
 
@@ -32,7 +34,6 @@ payoffs, pop_list_in, init_strategy_str_list_in, net_discount_list_in, strat_dis
 
 - Initial Host Hawk Condition [init_cond_hawk_p2, float in [0,100]]: initial host hawk strategy percentage.  (i.e., if 75, all agents will start simulation with 75% chance to play hawk when hosting).
 
-###########################################
 ###########################################
 
 #### First, C++ simulation code must be compiled. 
