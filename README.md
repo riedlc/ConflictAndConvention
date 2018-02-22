@@ -79,8 +79,7 @@ If you set run_now = 0, you will need to know 3 things:  Number of seeds to run 
 Can easily wrap this in a bash script to run all configuration files.  By default, python will run all configuration files created when run_now = 1.
 
 
-
-####Notes:
+#### Notes:
 
 Populations larger than 100 are quite slow and should be run on a dedicated server if possible.  Small populations are very fast and low memory usage, so splitting runs among many threads is preferable.  At about population 500 the opposite holds, higher RAM is more important than more threads/cores.
 
